@@ -1,3 +1,3 @@
-# golang-deploy-docker
+# golang-deploy
 
-golang 给自己服务器写个半自动部署docker服务
+部署项目到 k3s 上
