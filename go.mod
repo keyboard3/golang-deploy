@@ -1,4 +1,4 @@
-module golang-deploy-docker
+module golang-deploy
 
 go 1.19
 
