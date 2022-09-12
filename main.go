@@ -32,7 +32,7 @@ func main() {
         }
     } else {
       log.Println("project "+name+" exist")
-      cmd := exec.Command("/bin/sh", "-c", "cd ../"+name+" && git pull && ./deploy.sh")
+      cmd := exec.Command("/bin/sh", "-c", "cd ../"+name+" && git pull && kubectl delete deployment "+name+" && ./deploy.sh")
       err :=cmd.Run()
       if err != nil {
         log.Printf("Command finished with error: %v", err)
