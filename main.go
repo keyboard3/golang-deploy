@@ -14,7 +14,7 @@ var (
 
 func main() {
   r := gin.Default()
-  r.GET("/deploy/:project", func(c *gin.Context) {
+  r.GET("/deploy/keyboard3/:project", func(c *gin.Context) {
     name := c.Param("project")
 
     _, err := os.Stat("../"+name)
